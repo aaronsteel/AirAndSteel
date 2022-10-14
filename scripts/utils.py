@@ -32,7 +32,7 @@ def parse_file_tags(filepath):
             lines = f.readlines()
             for line in lines:
                 if "index tags" in line:
-                    tags = line.split(": ")[1].split(", ")
+                    tags = ": ".join(line.split(": ")[1:]).split(", ")
                     return tags
         except Exception as e:
             print(f"couldn't get tags from {filepath}")
