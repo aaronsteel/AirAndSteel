@@ -18,7 +18,7 @@ export const sortPostsByDate = (posts) => {
   return posts.sort((a, b) => {
     const aDate = new Date(a.data.date);
     const bDate = new Date(b.data.date);
-    return bDate - aDate;
+    return aDate - bDate;
   });
 };
 

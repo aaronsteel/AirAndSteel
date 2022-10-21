@@ -17,7 +17,6 @@ def parse_file_metadata(filepath, filename):
             title = ": ".join(f.readline().strip().split(": ")[1:])
             desc = ": ".join(f.readline().strip().split(": ")[1:])
             date = ": ".join(f.readline().strip().split(": ")[1:])
-            print(f"parsed file {filepath} as '{title}' on '{date}'")
             date = get_date(date)
             f_tuple = (title, date, desc, filename)
             return f_tuple
@@ -40,3 +39,22 @@ def parse_file_tags(filepath):
             return None
     print(f"no tags present in {filepath}")
     return None
+
+def copy_pdfified(old_filepath, new_filepath):
+    with open(old_filepath, 'r') as old_f:
+        try:
+            old_f.readline()
+            title = ": ".join(old_f.readline().strip().split(": ")[1:])
+            desc = ": ".join(old_f.readline().strip().split(": ")[1:])
+            date = ": ".join(old_f.readline().strip().split(": ")[1:])
+            date = get_date(date)
+            with open(new_filepath, 'w') as new_f:
+                new_f.write(f"# {title}\n\n")
+                new_f.write(f"## {date}\n\n")
+                new_f.write(f"### {desc}\n\n")
+                for line in old_f.readlines():
+                    new_f.write(line)
+        except Exception as e:
+            print(f"messed up writing {old_filepath} into {new_filepath}")
+            print(e)
+            return None

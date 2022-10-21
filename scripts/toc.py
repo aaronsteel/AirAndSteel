@@ -23,13 +23,6 @@ index tags: Site Info, Table of Contents, Organization, Site Map"""
 
     list_of_posts = []
 
-    # remove toc if it exists
-    path_to_toc = os.path.join(directory, toc_filename)
-    if os.path.exists(path_to_toc):
-        os.remove(path_to_toc)
-    else:
-        print("toc didn't exist")
-
     for filename in os.listdir(directory):
         f = os.path.join(directory, filename)
         if os.path.isfile(f):
@@ -38,6 +31,13 @@ index tags: Site Info, Table of Contents, Organization, Site Map"""
                 list_of_posts.append(f_tuple)
 
     list_of_posts.sort(key=lambda x: x[1])
+
+    # remove toc if it exists
+    path_to_toc = os.path.join(directory, toc_filename)
+    if os.path.exists(path_to_toc):
+        os.remove(path_to_toc)
+    else:
+        print("toc didn't exist")
 
     toc_file = open(path_to_toc, "w")
     toc_file.write(header)
