@@ -15,7 +15,10 @@ TODO: set up the ability to also run it automatically, on commit or build.
     """
     footer = """---
 
-index tags: Site Info, Table of Contents, Organization, Site Map"""
+index tags: Site Info, Table of Contents, Organization, Site Map
+
+---
+"""
     toc_filename = "on-site-contents-by-article.mdx"
 
     directory = '../posts'

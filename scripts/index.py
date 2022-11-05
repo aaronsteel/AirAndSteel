@@ -56,7 +56,7 @@ TODO: set up the ability to also run it automatically, on commit or build.
             post_link = f"/posts/{filename.split('.')[0]}"
             post_strings.append(f"[{title}]({post_link}) - {date}")
         index_file.write(", ".join(ps for ps in post_strings))
-        index_file.write("\n\n")
+        index_file.write("\n\n---\n")
     index_file.close()
 
 if __name__ == "__main__":
