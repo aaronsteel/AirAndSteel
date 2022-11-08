@@ -91,6 +91,74 @@ From Peter, [@The_Law_Boy](https://twitter.com/The_Law_Boy) of [5-4 Pod](https:/
 >
 > many repliers very proud of themselves for knowing the basic contours of corporate law here rather than grasping the actual point which is that corporate law is dumb
 
+### Nov 7, 2022 ([src](https://twitter.com/stevekrenzel/status/1589700721121058817))
+
+From ([@stevekrenzel](https://twitter.com/stevekrenzel))
+
+> With Twitter's change in ownership last week, I'm probably in the clear to talk about the most unethical thing I was asked to build while working at Twitter.
+>
+> With Twitter's change in ownership last week, I'm probably in the clear to talk about the most unethical thing I was asked to build while working at Twitter.
+>
+> Most people don't really appreciate how close Twitter was to shutting down. The 2016 election was the only thing that saved them and made them relevant again (to the detriment of us all). But I digress...
+>
+> I worked as a software engineer on a team with a charter to make Twitter work better for people in emerging markets (Brazil, India, Nigeria, etc...). This meant a lot of mobile work. And was mostly non-visual stuff - reducing bandwidth, memory usage, battery consumption.
+>
+> Oh and app size... we fought tooth and nail to keep the app under 10MB. FB had the money to zero-rate for people in India to d/l a 100MB app, but we did not. We finally lost the 10MB battle when Twitter Video launched (iirc). After that, all discipline around app size was lost.
+>
+> One of the first areas I worked on was improving the way our mobile apps uploaded logs. Twitter, like most mobile apps, logs *everything* users do – every swipe, tap, edit, delay, etc… – for debugging, metrics, and experiments.
+>
+> The size of logs adds up quickly.
+>
+> In the app, HTTP responses were compressed, but requests weren't. Logs are highly compressible, so I wired up support to gzip HTTP requests, and tweaked our log ingestion server to handle these.
+>
+> (That reduced mobile bandwidth consumption by ~40% iirc. It was absurd.)
+>
+> So I became known as the mobile logs guy. And that sets the stage for why I was pulled into a Sales conversation. Twitter was on its death bed and was desperate for money. A large telco wanted to pay us to log signal strength data in N. America and send it to them.
+>
+> My plan was to aggregate signal strength by carrier / by location. I worked with Data Science to find a granularity – minimum area size and minimum distinct users per area – that would preserve anonymity even when combined with other sources of data (differential privacy).
+>
+> When we sent this data to the telco they said the data was useless. They switched their request and said they want to be able to tell how many of our users are entering their competitors’ stores.
+>
+> A bit sketchier, but maybe workable in a privacy respecting way?
+>
+> We ran an alternative by the telco. They didn’t like it and were frustrated. So was Sales. I was asked to go to telco’s HQ and figure out exactly what they want.
+>
+> The subsequent request was absurd.
+>
+> I wound up meeting with a Director who came in huffing and puffing.
+>
+> The Director said “We should know when users leave their house, their commute to work, and everywhere they go throughout the day. Anything less is useless. We get a lot more than that from other tech companies.”
+>
+> I responded with some variant of “No fucking way”.
+>
+> There was no universe where I was going to help sell granular identifiable user location data.
+>
+> This led to more internal meetings. Legal said the request was fine – none of it violated the user ToS.
+>
+> Normally they might find another engineer to do this work, but my whole team was aligned with the privacy concerns. Twitter had also just done layoffs (aside: time is a flat circle), so there were no spare engineers around.
+>
+> My team wasn’t touched by layoffs, but half of them had quit anyway. Twitter was having a mass exodus.
+>
+> I had done what I could, but Twitter was no longer a place to do good work. I decided to join the exodus and would pull any levers to kill this on my way out.
+>
+> One random anecdote:
+>
+> In the middle of this, I had gotten a new manager who, in a retention attempt I’ll never forget, said “If we filled a dump truck with money and dumped it on you, would you stay and build this?”
+>
+> I wasn’t really sure how to respond to that… but no dice.
+>
+> My last email written at Twitter was to Jack. To his credit, he responded quickly with something to the effect of “Let me look into that and make sure there isn’t a misunderstanding. It doesn’t  seem right. We wouldn’t want to do that.”
+>
+> It was in his hands now.
+>
+> As far as I know, the project actually got canned. Jack genuinely didn’t like it.
+>
+> I don’t know if this mindset will hold true with the new owner of Twitter though. I would assume Elon will do far worse things with the data.
+>
+> And, for the any employees still at Twitter, don’t underestimate the power of a pocket veto.
+>
+> Sometimes it doesn’t work out, or you have to escalate and risk it back firing, but a good pocket veto is a tool to learn to wield well.
+
 ---
 
 ## z-lib
@@ -158,6 +226,201 @@ A thread made by HeathenCommunist ([@MarxistHeathen](https://twitter.com/Marxist
 ### Nuclear Power
 
 [Spent Fuel: The risky resurgence of nuclear power](https://harpers.org/archive/2022/01/spent-fuel-the-risky-resurgence-of-nuclear-power/) by [Andrew Cockburn](https://harpers.org/author/andrewcockburn/)
+
+### Nov 1, 2022 ([src](https://twitter.com/curious_founder/status/1587581943763587072))
+
+Written by Michael Thomas, who writes at [michaelthomaswrites.substack.com](https://michaelthomaswrites.substack.com/).
+
+> Recently I learned about a man who has trained 1,000+ people to block wind and solar projects. 
+>
+> I read through all his training materials, presentations, and seminars. 
+>
+> Here's what I learned about him and how his students plan to "win the war on clean energy."
+>
+> The odds are pretty good you haven't heard of this man, John Droz, Jr.
+>
+> He's only been interviewed by a few journalists. And when asked about his influence he always responds the same way: 
+>
+> "This story isn't about me."
+>
+> But the story of climate action and delay in America is very much about Droz. 
+>
+> For most of his life, Droz was a semi-retired real estate developer. In 2011, he reinvented himself and became a "physicist." 
+>
+> That year, his home state of N.C. debated a bill about climate change.
+>
+> Droz put together a series of presentations, some as long as 168 slides, and headed to the capital.
+>
+> He had crunched the numbers and looked at the science. 
+>
+> According to Droz, climate change was a sham pushed by clean energy lobbyists.
+>
+> Remarkably, many legislators listened to him. 
+>
+> Even the Washington Post listened to him. In an article about sea-level rise, they quoted the real estate developer as a "local physicist."
+>
+> Droz's efforts worked. In 2012, N.C. passed a bill that prevented the state from taking action on sea-level rise. 
+>
+> This work got the attention of the biggest climate deniers in the country. 
+>
+> That year, ATI, a dark money think tank brought him on as a fellow.
+>
+> At ATI, Droz developed a playbook that would eventually be used by thousands of people to stop clean energy projects. 
+>
+> In 2012, he organized a secret meeting and training session to share his strategy with some of the country's most influential climate deniers and activists.
+>
+> For Droz, winning the war on clean energy is all about communication.
+>
+> The man is obsessed with what he calls “Press relations (PR) strategy.” 
+>
+> Those two letters—PR—are in hundreds of documents he's produced over the last decade.
+>
+> What’s the goal of this PR? 
+>
+> As he wrote, “Public opinion [on clean energy] must begin to change among citizens at large.”
+>
+> But changing minds wasn’t all Droz was interested in. 
+>
+> The next line in his memo reads: “Ultimate Goal: Change policy direction based on the message.”
+>
+> Droz, like many climate deniers, understood the power of offering the public and lawmakers a set of “alternative facts.” 
+>
+> All credible experts agree wind energy is better for the environment than fossil fuels. 
+>
+> Droz knew it was possible to convince people otherwise.
+>
+> Clean energy projects create jobs and tax revenue. They're great for local economies. 
+>
+> Droz offered an alternative assessment.
+>
+> At the secret meeting in 2012, he proposed an idea: 
+>
+> Established think tanks like Heartland, CFACT, and Cato could publish these "alternative facts." 
+>
+> And volunteers in communities across the U.S. could present them to local lawmakers.
+>
+> Of course, these volunteers couldn't just be against clean energy. 
+>
+> Droz wrote about this in a later training document titled "What Not To Say."
+>
+> He writes that if you're against something, "You will be painted as a denier and as a person against progress (going green)."
+>
+> One of Droz' most effective students, Susan Ralston, mastered this principle.
+>
+> She named her organization "Citizens for Responsible Solar." 
+>
+> The group has blocked huge projects across Virginia. Their main argument: Solar should be on rooftops, not rural land.
+>
+> By far the most unique tactic, I saw in Droz' training materials was his suggestion that clean energy opponents never compromise. 
+>
+> According to Droz, the way to win "the war on clean energy" is to come out with aggressive demands and stick to them.
+>
+> This approach has led his students to pass laws that literally or effectively ban clean energy in communities across the United States. 
+>
+> When they don't succeed at that, they file lawsuits that can drag out for years.
+>
+> All around the country, clean energy opponents are using this playbook to block solar and wind farms. 
+>
+> Projects that could have offered substantial carbon emissions reductions in almost every state have been blocked as a result.
+>
+> As for John Droz? He's reinvented himself once more. 
+>
+> In searching public records for his name, I came across dozens of emails to officials everywhere from Arizona to Pennsylvania about his "independent analysis of the 2020 election."
+>
+> Droz is now an election security expert.
+>
+> Later this week I plan to publish a story about who is funding and spreading clean energy misinformation. 
+>
+> Stay tuned.
+>
+> And if you missed it, you can check out [last week's story](https://twitter.com/curious_founder/status/1586084131942932482)
+
+---
+
+## Media
+
+### ([src](https://twitter.com/hilaryagro/status/1588923871193075712))
+
+From Hilary Agro ([@hilaryagro](https://twitter.com/hilaryagro), [linktree](https://linktr.ee/hilaryagro))
+
+> We all know that Marvel movies are military propaganda but I think it's under-discussed how they're also neoliberal propaganda for making people believe that powerful people will save us if we just let them do whatever they want
+>
+> I know many people have indeed discussed this (feel free to share links) but since many people still believe Elon Musk and Bill Gates are gonna solve climate change and poverty, clearly it's still not discussed enough
+>
+> Anyways none of this really matters because the fact is that capitalism is eating us alive—we're served these distractions so we don't organize to fight back.
+>
+> If you're in Canada, [learn about and support the CUPE wildcat strike! (via twitter.com/hilaryagro)](https://twitter.com/hilaryagro/status/1588648160406437888)
+
+---
+
+## Ukraine
+
+### Nov 6, 2022 ([src](https://twitter.com/failure1991/status/1589317988108292096))
+
+> Hi Everyone,
+>
+> My threads are sparse and spare but I wanted to talk about the current battle of Pavlovka in Donetsk Oblast, south of Donetsk
+>
+> For context Pavlovka is located south southwest of a village made up of high rise buildings called Ugledar that give it a panoramic view allowing for artillery spotting all the way to Donetsk. You need to take Ugledar to properly secure the southern approach of Donetsk.
+>
+> Pavlovka had been taken by the Russians in the Spring but was lost in June to a UKR counterattack shortly before the Russians completely took Lugansk Oblast.
+>
+> On 31 October the Russian commanders in the region apparently saw an opportunity as the VSU withdrew a brigade from the area to plug gaps up by Artemovsk. They decided to launch an attack across the front
+>
+> Following a sharp well planned bombardment, including use of TOS-1A thermobaric artillery, the first UKR defensive line was annihilated and the survivors fell back. Despite the mud progress was quick and half the village fell into Russian hands that day
+>
+> By 1 November most of the village had been cleared, but the UKR held onto the northern edge of the village, assisted by rushed reserves and artillery fire directed from Ugledar
+>
+> The VSU brought in a new brigade and counterattacked pushing the Russians back somewhat. The Russians however were not helpless. The DNR unit Kaskad has published footage of them using drones to fire artillery strikes on the UKR second line in Ugledar
+>
+> Now here is where things get interesting and confusing. Controversy has arisen on RU TG from a letter ostensibly written to the Governor of the Primorsky Krai that complained of heavy losses, extremely bad planning and incompetent glory seeking commanders.
+>
+> Specifically the letter claims General Rustem Muradov, commander of the Eastern Military District, was promised a medal if he took Pavlovka by the Chief of the General Staff, General Gerasimov and there was little planning or care shown
+>
+> The letter also claims the 155th Marine Brigade has lost 300 men killed and wounded in four days fighting and HALF its vehicles. Link to the text can be found here (in Russian).
+>
+> This has been seized on by Russian correspondents Alexander Sladkov and the War Gonzo team and promoted with great outrage. It has also been picked up by pro-UKR western commentators including Rob Lee.
+> > [RT (via Rob Lee, twitter.com/RALee85)](https://twitter.com/RALee85/status/1589302035748249602)
+> > > ['the letter itself from the 155th Marine Brigade that is on everyone's lips today. The brigade was ordered to advance to Uhledar via Pavlivka. They mention 300 casualties (dead and wounded) in just 4 days, and these are marines.' via Dmitri, twitter.com/wartranslated](https://twitter.com/wartranslated/status/1589300375583981569)
+>
+> Now then here is the thing. I don't believe this letter fully. Why? Because the letter said the brigade has lost half its vehicles. Even at a minimum that would 130 vehicles. The UKR are very media conscious. We would see the evidence of this all over social media. We do not 
+>
+> Scanning Rob Lee and UKR Weapons Tracker I counted at most 6 vehicles from this area of the front in UKR videos over the past four days. One of which was a not badly damaged but abandoned tank in Pavlovka.
+> > [Ukraine’s Omega unit captured a Russian T-80BVM tank in the Vuhledar/Pavlivka area. (via twitter.com/RALee85)](https://twitter.com/RALee85/status/1589278976236982272)
+>
+> By contrast there is evidence of UKR soldiers in severe distress in this area particularly from the VSU 72nd Bde. There are videos of soldiers claiming many of their comrades are dead and they could be overrun at any moment.
+>
+> As far Pavlovka itself, the aforementioned DNR unit Kaskad, shows continuous strikes on UKR units fighting in the village.
+>
+> So we have no evidence of devastating Russian losses but we do have direct video evidence that this is definitely not a triumphant easy going time for the VSU. Indeed we have pleas on UKR social media about missing men from the 72nd VSU bde. What is going on here?
+>
+> Well, a few things. As @BakerSevenZero has pointed out the letter singles out and calls glory seeking and incompetent two Russian Generals of North Caucasian ethnicity. Muradov and Akhmedov
+>
+> We know the UKR attempt to sow ethnic division in the Russian Armed Forces, recall for instance claims from February and March that ethnic Russian commanders were throwing away the lives of their Buryat and North Caucasian troops - claims later proven false
+>
+> The letter also calls out the chief of the General Staff, Valery Gerasimov. Recently both Kadyrov, the Chechen President/Governor, and Prigozhin, the CEO of the Wagner PMC got General Alexander Lapin of the Central Military District sacked
+>
+> These were on claims similar to those levelled against Muradov in this letter here. However those claims were vehemently denied by Lapin's own troops, the Donbass militia who served under his command, and direct video and battlefield evidence to the contrary 
+>
+> So what do I think? This letter is either a UKR psyop or a bit of racist nonsense from some members of the 155th Naval Infantry brigade. I tend to lean toward the former.
+>
+> Whatever the case the battle of Pavlovka is definitely grim for both sides, but this latest news I think is being seized on by too many people both those who lean towards Russia and those who lean toward UKR.
+
+---
+
+## Modern Movement
+
+### Nov 7, 2022 ([src](https://twitter.com/m1vql1hdwt/status/1589618250702557184))
+
+via mazal מזל ([@m1vql1hdwt](https://twitter.com/m1vql1hdwt)), editor at [Unity-Struggle-Unity](/posts/on-unity-struggle-unity).
+
+> we lost like 2 generations of marxist-leninist leadership through the most vicious state repression during the last few decades and i think that goes a long way towards explaining why anarchistic/utopian misconceptions of theory and praxis prevail in our movement now
+>
+> "where are our mentors? where is the old guard"
+>
+> ...
+>
+> "oh, they're all dead."
 
 ---
 
