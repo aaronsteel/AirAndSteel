@@ -36,7 +36,7 @@ export const getPosts = () => {
 
   posts = sortPostsByDate(posts);
 
-  return posts;
+  return posts.slice(0,7);
 };
 
 export const getPostBySlug = async (slug) => {
