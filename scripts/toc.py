@@ -18,6 +18,10 @@ TODO: set up the ability to also run it automatically, on commit or build.
 index tags: Site Info, Table of Contents, Organization, Site Map
 
 ---
+
+category tags: Site Info
+
+---
 """
     toc_filename = "on-site-contents-by-article.mdx"
 

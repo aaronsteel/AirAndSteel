@@ -2,6 +2,7 @@
     "mdDocs": [
         "./pdfified_posts/on-this-site.mdx",
         "./pdfified_posts/on-site-contents-by-article.mdx",
+        "./pdfified_posts/on-site-contents-by-category.mdx",
         "./pdfified_posts/on-site-contents-by-topic.mdx",
         "./pdfified_posts/on-access.mdx",
         "./pdfified_posts/on-ny-resources.mdx",
@@ -82,6 +83,7 @@
         "./pdfified_posts/on-dilanpcook.mdx",
         "./pdfified_posts/on-indigenous-rights.mdx",
         "./pdfified_posts/on-palestine.mdx",
-        "./pdfified_posts/on-mental-health.mdx"
+        "./pdfified_posts/on-mental-health.mdx",
+        "./pdfified_posts/on-transit-and-cars.mdx"
     ]
 }

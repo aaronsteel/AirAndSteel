@@ -25,13 +25,28 @@ def parse_file_metadata(filepath, filename):
             print(e)
             return None
 
-def parse_file_tags(filepath):
+def parse_index_tags(filepath):
     with open(filepath, 'r') as f:
         try:
             lines = f.readlines()
             for line in lines:
                 if "index tags" in line:
-                    tags = ": ".join(line.split(": ")[1:]).split(", ")
+                    tags = ": ".join(line.strip().split(": ")[1:]).split(", ")
+                    return tags
+        except Exception as e:
+            print(f"couldn't get tags from {filepath}")
+            print(e)
+            return None
+    print(f"no tags present in {filepath}")
+    return None
+
+def parse_category_tags(filepath):
+    with open(filepath, 'r') as f:
+        try:
+            lines = f.readlines()
+            for line in lines:
+                if "category tags" in line:
+                    tags = ": ".join(line.strip().split(": ")[1:]).split(", ")
                     return tags
         except Exception as e:
             print(f"couldn't get tags from {filepath}")
