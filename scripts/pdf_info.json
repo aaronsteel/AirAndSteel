@@ -5,7 +5,6 @@
         "./pdfified_posts/on-site-contents-by-category.mdx",
         "./pdfified_posts/on-site-contents-by-topic.mdx",
         "./pdfified_posts/on-access.mdx",
-        "./pdfified_posts/on-ny-resources.mdx",
         "./pdfified_posts/air-and-steel.mdx",
         "./pdfified_posts/on-organizing.mdx",
         "./pdfified_posts/on-charity-and-charitability.mdx",
@@ -84,6 +83,8 @@
         "./pdfified_posts/on-indigenous-rights.mdx",
         "./pdfified_posts/on-palestine.mdx",
         "./pdfified_posts/on-mental-health.mdx",
-        "./pdfified_posts/on-transit-and-cars.mdx"
+        "./pdfified_posts/on-transit-and-cars.mdx",
+        "./pdfified_posts/on-ny-resources.mdx",
+        "./pdfified_posts/on-mkorostoff.mdx"
     ]
 }
