@@ -1,5 +1,7 @@
 {
     "mdDocs": [
+        "./pdfified_posts/on-nia-frome.mdx",
+        "./pdfified_posts/on-roderic-day.mdx",
         "./pdfified_posts/on-this-site.mdx",
         "./pdfified_posts/on-site-contents-by-article.mdx",
         "./pdfified_posts/on-site-contents-by-category.mdx",
@@ -59,7 +61,6 @@
         "./pdfified_posts/on-the-fall-of-twitter.mdx",
         "./pdfified_posts/on-trans-rights.mdx",
         "./pdfified_posts/on-indigenous-resources.mdx",
-        "./pdfified_posts/on-redsails-twitter.mdx",
         "./pdfified_posts/on-prole-academy.mdx",
         "./pdfified_posts/on-debs.mdx",
         "./pdfified_posts/on-homelessness-and-resources.mdx",
