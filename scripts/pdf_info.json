@@ -1,7 +1,5 @@
 {
     "mdDocs": [
-        "./pdfified_posts/on-nia-frome.mdx",
-        "./pdfified_posts/on-roderic-day.mdx",
         "./pdfified_posts/on-this-site.mdx",
         "./pdfified_posts/on-site-contents-by-article.mdx",
         "./pdfified_posts/on-site-contents-by-category.mdx",
@@ -88,6 +86,8 @@
         "./pdfified_posts/on-ny-resources.mdx",
         "./pdfified_posts/on-mkorostoff.mdx",
         "./pdfified_posts/on-aaron-thorpe.mdx",
-        "./pdfified_posts/on-z-library.mdx"
+        "./pdfified_posts/on-z-library.mdx",
+        "./pdfified_posts/on-nia-frome.mdx",
+        "./pdfified_posts/on-roderic-day.mdx"
     ]
 }
